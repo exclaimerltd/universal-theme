@@ -1,11 +1,22 @@
 {
   "name": "Exclaimer Guides",
   "author": "Exclaimer - Michael Sutcliffe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
-    
+    {
+      "label": "annoucment",
+      "variables": [
+        {
+          "identifier": "brand_color",
+          "type": "color",
+          "description": "brand_color_description",
+          "label": "brand_color_label",
+          "value": "#0D0A47"
+        }
+      ]
+    },
     {
       "label": "colors_group_label",
       "variables": [
