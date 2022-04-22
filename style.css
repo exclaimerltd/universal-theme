@@ -5059,3 +5059,74 @@ html[dir="rtl"] .notification-left-aligned {
 .dropdown-chevron-icon {
   vertical-align: middle;
 }
+
+
+/*================================
+    OVERRIDES & NEW STYLES
+==================================*/
+
+header.header {
+  height: 100px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 100%;
+  height: auto;
+  padding: 150px 0;
+}
+
+.hero > h2 {
+  color: #fff;
+  margin: 0;
+}
+
+.hero > p {
+  color: #fff;
+  margin-top: 0;
+}
+
+.hero-inner {
+  position: relative;
+  top: unset;
+  transform: unset;
+  width: 100%;
+}
+
+.search-icon {
+  top: 51%;
+  transform: translateY(-41%);
+}
+
+.search-home {
+  border: 0;
+}
+
+.clear-button {
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1); 
+  box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+}
+
+.search-home input[type="search"]{
+  border: 0;
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1); 
+  box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+  transition: ease all 0.3s;
+}
+
+.search-home input[type="search"]:focus {
+  border: 0;
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(242, 112, 33, 1); 
+  box-shadow: 0px 0px 0px 5px rgba(242, 112, 33, 1);
+}
+
+.search .search-full .clear-button {
+  border: 0;
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(242, 112, 33, 1); 
+  box-shadow: 0px 0px 0px 5px rgba(242, 112, 33, 1);
+  background-color: rgba(242, 112, 33, 1);
+  color: #fff;
+}

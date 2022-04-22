@@ -1,13 +1,11 @@
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 
 <section id="main-content" class="section hero">
+  <h2>How can we help?</h2>
+  <p>Start by typing a topic or question below.</p>
   <div class="hero-inner">
-    <h2 class="visibility-hidden">{{ t 'search' }}</h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
-      <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
-      <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-    </svg>
-    {{search submit=false instant=settings.instant_search class='search search-full'}}
+    <i class="fa-light fa-magnifying-glass search-icon"></i>
+    {{search submit=false instant=settings.instant_search class='search search-home search-full'}}
   </div>
 </section>
 
@@ -63,7 +61,7 @@
       </section>
     {{/if}}
   </section>
-
+{{!-- COMMUNITY SECTION
   {{#if help_center.community_enabled}}
     <section class="section home-section community">
       <h2>{{t 'community'}}</h2>
@@ -73,8 +71,8 @@
 
       <div class="community-image"></div>
     </section>
-  {{/if}}
-
+  {{/if}} 
+--}}
   <section class="section home-section activity">
     {{#if settings.show_recent_activity}}
       {{recent_activity}}

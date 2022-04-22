@@ -13,7 +13,7 @@
   <div class="nav-wrapper-desktop">
     <nav class="user-nav" id="user-nav">
       <ul class="user-nav-list">
-        <li>{{link 'community'}}</li>
+        {{!-- <li>{{link 'community'}}</li> --}}
         <li>{{link 'new_request' class='submit-a-request'}}</li>
         {{#unless signed_in}}
           <li>
@@ -27,13 +27,7 @@
     {{#if signed_in}}
       <div class="user-info dropdown">
         <button class="dropdown-toggle" aria-haspopup="true">
-          {{user_avatar class="user-avatar"}}
-          <span>
-            {{user_name}}
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon" aria-hidden="true">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
-            </svg>
-          </span>
+            {{user_name}} <i class="fa-light fa-angle-down"></i>
         </button>
         <div class="dropdown-menu" role="menu">
           {{#my_profile role="menuitem"}}{{t 'profile'}}{{/my_profile}}

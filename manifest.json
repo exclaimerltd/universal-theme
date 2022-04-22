@@ -1,10 +1,20 @@
 {
   "name": "Exclaimer Guides",
   "author": "Exclaimer - Michael Sutcliffe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
+    {
+      "label": "annoucements",
+      "variables": [
+        {
+          "identifier": "annoucement",
+          "type": "text",
+          "label": "This is a test"
+        }
+      ]
+    },
     {
       "label": "colors_group_label",
       "variables": [
