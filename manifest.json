@@ -6,7 +6,7 @@
   "default_locale": "en-us",
   "settings": [
     {
-      "label": "annoucements",
+      "label": "colors_group_label",
       "variables": [
         {
           "identifier": "annoucement",
